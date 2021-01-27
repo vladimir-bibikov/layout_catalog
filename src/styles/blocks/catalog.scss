@@ -1,13 +1,13 @@
 .catalog {
   display: grid;
-  gap: $big-gap $cs-mrgn;
+  gap: $big-gap 2 * $card-side-margin;
   grid-template-columns: repeat(auto-fill, $card-width);
   justify-content: center;
   max-width: $full-width;
 
   @media screen and (max-width: $width-for-two - 1px) {
     & {
-      max-width: 2 * $bb-width + $cs-mrgn;
+      max-width: 2 * $card-width + 2 * $card-side-margin;
     }
   }
 }

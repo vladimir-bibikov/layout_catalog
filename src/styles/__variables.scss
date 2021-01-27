@@ -4,15 +4,15 @@ $small-gap: 20px;
 $card-width: 200px;
 $card-height: 403px;
 $card-border: 1px;
-$bb-height: $card-height + 2 * $card-border;
-$bb-width: $card-width + 2 * $card-border;
-$cs-mrgn: $big-gap - 2 * $card-border;
-$card-padding: 30px 14px 14px;
+
+$card-side-margin: ($big-gap - 2 * $card-border) / 2;
+$card-padding: 15px 14px 14px;
+
 $radius: 5px;
 
 $count: 4;
-$full-width: $count * $card-width + ($count - 1) * $cs-mrgn;
-$width-for-two: $count * $card-width + ($count - 1) * $cs-mrgn + 80px;
+$full-width: $count * $card-width + ($count - 1) * $card-side-margin * 2;
+$width-for-two: 1023px;
 
 $logo-edge: 40px;
 
