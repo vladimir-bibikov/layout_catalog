@@ -1,17 +1,13 @@
 .catalog {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  gap: $big-gap $cs-mrgn;
+  grid-template-columns: repeat(auto-fill, $card-width);
   justify-content: center;
+  max-width: $full-width;
 
-  &__card {
-    margin: 0 $card-side-margin $big-gap;
-  }
-
-  @media screen and (max-width: 400px) {
-    &__card {
-      margin-left: 0;
-      margin-right: 0;
+  @media screen and (max-width: $width-for-two - 1px) {
+    & {
+      max-width: 2 * $bb-width + $cs-mrgn;
     }
   }
 }
